@@ -1,0 +1,6 @@
+@inproceedings{invbyinv_2023,
+  title={Inversion-by-Inversion: Exemplar-based Sketch-to-Photo Synthesis via Stochastic Differential Equations},
+  author={Author, First and Author, Second and Author, Third},
+  booktitle={ArXiv},
+  year={2023}
+}
