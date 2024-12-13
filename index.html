@@ -7,14 +7,6 @@
             crossorigin="anonymous"></script>
     <!-- Custom JS for this template -->
     <script src="js/copyText.js"></script>
-    <!--Include Latex (optional)-->
-    <!--<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>-->
-    <!--<script type="text/x-mathjax-config">-->
-    <!--    MathJax.Hub.Config({-->
-    <!--        tex2jax: {inlineMath: [['$', '$']]},-->
-    <!--        messageStyle: "none"-->
-    <!--    });-->
-    <!--</script>-->
 
     <!-- Include the icon fonts stylesheet-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -23,16 +15,25 @@
           rel="stylesheet"
           integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
           crossorigin="anonymous">
+    <!--Local Icon-->
+    <link rel="stylesheet" href="icons/style.css">
+    <!--Local Fonts-->
+    <link rel="stylesheet" href="fonts/avenir-next/stylesheet.css">
+    <link rel="stylesheet" href="fonts/segoe-print/stylesheet.css">
     <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Inversion-by-Inversion: Exemplar-based Sketch-to-Photo Synthesis via Stochastic Differential
         Equations</title>
+    <!-- The description that appears when you share the link -->
     <meta property="og:description" content="Inversion-by-Inversion: Exemplar-based Sketch-to-Photo Synthesis via Stochastic Differential
         Equations"/>
+    <!-- Used to display page descriptions in search results -->
     <meta name="description" content="Inversion-by-Inversion, inv-by-ing, inversion, SDE, diffusion">
+    <!-- favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -40,78 +41,64 @@
     <hr>
     <!-- Paper Title -->
     <div class="container text-center">
-        <a class="blog-header-logo text-body-emphasis" href="#">Inversion-by-Inversion: Exemplar-based Sketch-to-Photo
-            Synthesis via Stochastic Differential Equations without training</a>
+        <span class="title-font x-gradient-font">Inversion-by-Inversion: Exemplar-based Sketch-to-Photo
+            Synthesis via Stochastic Differential Equations without training</span>
     </div>
     <hr>
     <!-- author list -->
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <p class="fs-5"><a href="https://ximinng.github.io//"
-                                   class="link-body-emphasis">Ximing Xing</a><sup>1</sup></p>
+    <div class="container author text-center">
+        <!-- authors -->
+        <div class="row gy-2">
+            <div class="col-12 col-md-3">
+                <a class="link" href="https://ximinng.github.io">Ximing Xing</a><sup>1</sup>
             </div>
-            <div class="col"><p class="fs-5">Chuang Wang<sup>1</sup></p></div>
-            <div class="col"><p class="fs-5">Haitao Zhou<sup>1</sup></p></div>
-            <div class="col"><p class="fs-5">ZhiHao Hu<sup>1</sup></p></div>
+            <div class="col-12 col-md-3">Haitao Zhou<sup>1</sup></div>
+            <div class="col-12 col-md-3">Chuang Wang<sup>1</sup></div>
+            <div class="col-12 col-md-3">
+                <a class="link" href="https://scholar.google.com/citations?user=4nBRRYMAAAAJ&hl=zh-CN">Zhihao
+                    Hu</a><sup>1</sup>
+            </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <p class="fs-5"><a href="https://yuqian1023.github.io/" class="link-body-emphasis">Qian
-                    Yu</a><sup>1</sup></p>
+        <div class="row gy-2">
+            <div class="col-12 col-md-4">
+                <a class="link" href="https://yuqian1023.github.io">Qian Yu</a><sup>1</sup>
             </div>
-            <div class="col">
-                <p class="fs-5"><a href="https://zhenxuan00.github.io/"
-                                   class="link-body-emphasis">Chongxuan Li</a><sup>2</sup></p>
+            <div class="col-12 col-md-4">
+                <a class="link" href="https://zhenxuan00.github.io/">Chongxuan Li</a><sup>2</sup>
             </div>
-            <div class="col"><p class="fs-5">Dong Xu<sup>3</sup></p></div>
+            <div class="col-12 col-md-4">
+                <a class="link" href="https://www.cs.hku.hk/people/academic-staff/dongxu">Dong Xu</a><sup>3</sup>
+            </div>
         </div>
-    </div>
-    <!-- author organization -->
-    <div class="text-center">
-        <p class="fs-6">
-            <sup>1</sup>Beihang University
-            &nbsp;&nbsp;<sup>2</sup>Renmin University of China
-            &nbsp;&nbsp;<sup>3</sup>The University of Hong Kong</p>
-        </p>
-    </div>
-    <!-- paper status -->
-    <div class="text-center">
-        <h3>Paper status - Under Review</h3>
+        <!-- author organization -->
+        <div class="row mt-3">
+            <div class="col-12">
+                <sup>1</sup>Beihang University
+                &nbsp;&nbsp;<sup>2</sup>Renmin University of China
+                &nbsp;&nbsp;<sup>3</sup>The University of Hong Kong</p>
+            </div>
+        </div>
     </div>
     <!-- links -->
     <div class="text-center">
         <div class="row justify-content-md-center">
-            <div class="col col-lg-3">
-                <!-- more svg icon can bre found in:  https://icons.getbootstrap.com/?q=github -->
-                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);"
-                   href="https://arxiv.org/abs/2308.07665">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-newspaper" viewBox="0 0 16 16">
-                        <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
-                        <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
-                    </svg>
-                    <h3>Paper</h3>
-                </a>
-            </div>
-            <div class="col col-lg-3">
-                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);"
-                   href="https://github.com/ximinng/inversion-by-inversion">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
-                         class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                    <h3>Code</h3>
-                </a>
+            <div id="links">
+                <div class="col col-lg-2">
+                    <a id="arxiv" href="https://arxiv.org/abs/2308.07665">Paper</a>
+                </div>
+                <div class="col col-lg-2">
+                    <a id="code" href="https://github.com/ximinng/inversion-by-inversion">Code</a>
+                </div>
             </div>
         </div>
     </div>
     <br>
-
     <!-- teaser -->
     <div class="text-center">
         <figure class="figure">
-            <img src="./assets/teaser.png" class="img-thumbnail figure-img img-fluid rounded" alt="teaser">
+            <img src="./assets/teaser.png"
+                 class="figure-img img-fluid rounded"
+                 alt="Inversion-by-Inversion teaser">
             <figcaption class="figure-caption">
                 Representative exemplar-based sketch-to-photo synthesis results of our proposed Inversion-by-Inversion
                 method.
@@ -119,13 +106,19 @@
         </figure>
     </div>
 
+    <!-- TL;DR -->
+    <div class="text-center" style="margin-top: 20px; font-size: 20px; font-weight: 500;">
+        <b>TL;DR:</b>
+        Inversion-by-Inversion, <b>training-free</b> exemplar-based sketch-to-photo synthesis using <b>energy-guided</b>
+        diffusion models.
+    </div>
 </header>
 <br>
 
 <main class="container">
     <!-- Abstract -->
-    <div class="card">
-        <div class="card-body">
+    <div class="card border-0">
+        <div class="card-body x-gradient-block">
             <h2 class="card-title text-center card-title-margin">Abstract</h2>
             <p class="card-text">
                 Exemplar-based sketch-to-photo synthesis enables a user to generate a photo-realistic image based on a
@@ -134,8 +127,8 @@
                 still challenging for a diffusion model to handle sketch images. A sketch only contains a few black
                 pixels while the rest are white, making it hard for diffusion-based methods to generate photo-realistic
                 images with color and texture. In this work, we propose an Inversion-by-Inversion method for
-                exemplar-based sketch-to-photo synthesis, including shape-enhancing inversion and full-control
-                inversion. During the shape-enhancing inversion process, an uncolored photo is generated with the
+                exemplar-based sketch-to-photo synthesis, including <b>shape-enhancing inversion</b> and <b>full-control
+                inversion</b>. During the shape-enhancing inversion process, an uncolored photo is generated with the
                 guidance of a shape-energy function. This step is essential for this task to ensure sketch control in
                 shape. During the full-control inversion process, we additionally propose an appearance-energy function
                 to add the color and texture of the exemplar and generate the final RGB photo. Our
@@ -172,24 +165,26 @@
     <!--    <br>-->
 
     <!-- Methodology -->
-    <div class="card">
+    <div class="card border-0">
         <div class="card-body">
             <h2 class="card-title card-title-margin">Methodology</h2>
             <div class="text-center">
                 <figure class="figure">
                     <img src="./assets/method.png" class="figure-img img-fluid rounded" alt="method">
-                    <!--                    <figcaption class="figure-caption">A caption for the above image.</figcaption>-->
                 </figure>
             </div>
             <p class="card-text">
-                Overview of our Inversion-by-Inversion Translation via SDE. The blue, green, and orange contour plots
+                Overview of our <b>Inversion-by-Inversion Translation via SDE</b>. The blue, green, and orange contour
+                plots
                 represent the distributions of sketch, uncolored photo, and photo, respectively. The movement of the
                 grey dot in the distribution denotes the sketch-to-photo synthesis process of our proposed
-                Inversion-by-Inversion method. In our shape-enhancing inversion step (a), we first perturb the input
+                Inversion-by-Inversion method. In our shape-enhancing inversion step <b>(a)</b>, we first perturb the
+                input
                 sketch with the forward process of SDE. Then the inversion process of SDE will gradually remove the
                 noise, and the uncolored photo is synthesized with the shape of the input sketch. During this procedure,
                 we propose the shape-energy function to maintain the structure of the input sketch. After that, we
-                perform the full-control inversion step (b) by first perturbing the uncolored photo and then using SDE
+                perform the full-control inversion step <b>(b)</b> by first perturbing the uncolored photo and then
+                using SDE
                 inversion to denoise it. During this procedure, we use both the shape-energy function and the
                 appearance-energy function for maintaining the structure of the input sketch and add the appearance
                 (i.e., texture and color) from the given exemplar into the output photo (Best viewed in color).
@@ -198,80 +193,17 @@
     </div>
     <br>
 
-    <!-- Experiments -->
-    <!--    <div class="card">-->
-    <!--        <div class="card-body">-->
-    <!--            <h2 class="card-title card-title-margin">Experiments</h2>-->
-    <!--            <p class="card-text">-->
-    <!--                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo-->
-    <!--                dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero,-->
-    <!--                elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate-->
-    <!--                dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue-->
-    <!--                felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla-->
-    <!--                vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl,-->
-    <!--                porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras-->
-    <!--                volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam.-->
-    <!--                Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.-->
-    <!--            </p>-->
-    <!--            <br>-->
-
-    <!--            &lt;!&ndash; Table example &ndash;&gt;-->
-    <!--            <table class="table">-->
-    <!--                <thead>-->
-    <!--                <tr class="table-primary">-->
-    <!--                    <th scope="col">#</th>-->
-    <!--                    <th scope="col">First</th>-->
-    <!--                    <th scope="col">Last</th>-->
-    <!--                    <th scope="col">Handle</th>-->
-    <!--                </tr>-->
-    <!--                </thead>-->
-    <!--                <tbody class="table-group-divider">-->
-    <!--                <tr>-->
-    <!--                    <th scope="row">1</th>-->
-    <!--                    <td>Mark</td>-->
-    <!--                    <td>Otto</td>-->
-    <!--                    <td>@mdo</td>-->
-    <!--                </tr>-->
-    <!--                <tr>-->
-    <!--                    <th scope="row">2</th>-->
-    <!--                    <td>Jacob</td>-->
-    <!--                    <td>Thornton</td>-->
-    <!--                    <td>@fat</td>-->
-    <!--                </tr>-->
-    <!--                <tr>-->
-    <!--                    <th scope="row">3</th>-->
-    <!--                    <td colspan="2">Larry the Bird</td>-->
-    <!--                    <td>@twitter</td>-->
-    <!--                </tr>-->
-    <!--                </tbody>-->
-    <!--            </table>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--    <br>-->
-
-    <!-- Supplementary Material -->
-    <!--    <div class="card">-->
-    <!--        <div class="card-body">-->
-    <!--            <h2 class="card-title card-title-margin">Supplementary Material</h2>-->
-    <!--            <p class="card-text">-->
-    <!--                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo-->
-    <!--                dapibus sit amet.-->
-    <!--            </p>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--    <br>-->
-
     <!-- Citation -->
-    <div class="card">
+    <div class="card border-0">
         <div class="card-body">
             <h2 class="card-title card-title-margin">Citation</h2>
             <p id="bibtex" class="card-text" style="border: #1a1c20 1px">
-                <code> @article{xing2023inversion,<br>
+                <code> @article{xing2023invbyinv,<br>
                     &nbsp;&nbsp;title={Inversion-by-Inversion: Exemplar-based Sketch-to-Photo Synthesis via Stochastic
                     Differential Equations},<br>
                     &nbsp;&nbsp;author={Xing, Ximing and Wang, Chuang and Zhou, Haitao and Hu, Zhihao and Li, Chongxuan
                     and Xu, Dong and Yu, Qian},<br>
-                    journal={arXiv preprint arXiv:2308.07665},<br>
+                    &nbsp;&nbsp;journal={arXiv preprint arXiv:2308.07665},<br>
                     &nbsp;&nbsp;year={2023}<br>
                     }
                 </code>
@@ -303,31 +235,24 @@
     </div>
     <br>
 
-    <!-- Acknowledgements -->
-    <!--    <div class="card">-->
-    <!--        <div class="card-body">-->
-    <!--            <h4 class="card-title card-title-margin">Acknowledgements</h4>-->
-    <!--            <p class="card-text">We thank Ximing Xing for providing us with the source code of the web page to help us-->
-    <!--                build the project home page.</p>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--    <br>-->
-
 </main>
 
-<footer class="container blog-footer">
-    <p>
-        This webpage template was originally made by
-        <a href="https://github.com/ximinng"
-           class="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Ximing Xing</a>.
-    </p>
+<footer class="footer">
     <div class="container">
-        <div class="badge bg-primary text-wrap">
-            <p>
-                <a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                    Back to top
-                </a>
-            </p>
+        <div class="row align-items-center">
+            <!-- left layout -->
+            <div class="col-12 col-md-7 text-md-start text-center">
+                <p class="footer-title mb-0">Inversion-by-Inversion: Exemplar-based Sketch-to-Photo Synthesis via Stochastic Differential
+                    Equations</p>
+            </div>
+            <!-- right layout -->
+            <div class="col-12 col-md-5 text-md-end text-center">
+                <p class="footer-text mb-0">
+                    This webpage template was originally made by
+                    <a href="https://github.com/ximinng/GithubPages-Template" class="link-primary text-decoration-none">Ximing
+                        Xing</a>.
+                </p>
+            </div>
         </div>
     </div>
 </footer>

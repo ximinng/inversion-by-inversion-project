@@ -4,6 +4,8 @@ This web page template is specially made by me for academic papers.
 
 Look at what this web page looks like [here](https://ximinng.github.io/GithubPages-Template/).
 
+**You are welcome to copy this website's code for your personal use, please attribute the source with a link back to this page and remove the analytics code in the header.**
+
 ## Setup
 
 ### Clone
@@ -39,6 +41,11 @@ address [GITHUB_USERNAME.github.io/REPO_NAME](GITHUB_USERNAME.github.io/REPO_NAM
 
 ## Used by
 
+- [SVGFusion](https://ximinng.github.io/SVGFusionProject/)
+- [PyTorch-SVGRender](https://ximinng.github.io/PyTorch-SVGRender-project/)
+- [SVGDreamer](https://ximinng.github.io/SVGDreamer-project/)
+- [DiffSketcher](https://ximinng.github.io/DiffSketcher-project/)
+- [SketchSampler](https://cjeen.github.io/SketchSamplerPage/)
 - [Inversion-by-Inversion](https://ximinng.github.io/inversion-by-inversion-project/)
 
 ## License
@@ -51,4 +58,4 @@ This webpage source code based on [bootstrap v5.3](https://getbootstrap.com/docs
 
 ## Contacts
 
-**Ximing Xing** - `@ximinng <https://github.com/ximinng>`_ - ``ximingxing@gmail.com``
+**Ximing Xing** - `@ximinng <https://github.com/ximinng>` - ``ximingxing@gmail.com``
